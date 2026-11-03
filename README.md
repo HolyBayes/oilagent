@@ -7,7 +7,7 @@
 | Репозиторий | Назначение |
 |---|---|
 | [core](https://github.com/HolyBayes/oilagent-core) | Analyst/Evolution MCP, LangGraph, executor, Docker, тесты |
-| [evolution](https://github.com/HolyBayes/oilagent-evolution) | Четыре самоулучшаемых MCP скилла, шесть Python-методов, retrieval/source policies |
+| [evolution](https://github.com/HolyBayes/oilagent-evolution) | Четыре самоулучшаемых скилла, шесть Python-методов, retrieval/source policies |
 
 ## Как устроено
 
