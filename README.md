@@ -7,8 +7,8 @@
 
 | Submodule | Содержимое |
 |---|---|
-| [core](https://github.com/HolyBayes/oilagent-core) | MCP, LangGraph, executor, Docker и тесты |
-| [evolution](https://github.com/HolyBayes/oilagent-evolution) | Четыре самоулучшаемых скилла, шесть Python-методов и policies |
+| [core](https://github.com/HolyBayes/oilagent-core) | Репозиторий разработчиков. MCP, LangGraph, executor, Docker и тесты |
+| [evolution](https://github.com/HolyBayes/oilagent-evolution) | Agent-maintaned repository. Четыре самоулучшаемых скилла, шесть Python-методов и policies |
 
 ## Запуск
 
