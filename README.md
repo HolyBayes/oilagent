@@ -12,7 +12,7 @@
 
 ## Запуск
 
-Нужны Docker с Compose v2, Python 3.11+ и интернет. При первом запуске скачиваются PDF и веса.
+Нужны Docker с Compose v2, Python 3.11+ и интернет. При первом запуске скачиваются PDF отчетов и веса.
 
 ```bash
 git clone --recurse-submodules https://github.com/HolyBayes/oilagent.git
@@ -22,7 +22,7 @@ chmod 600 .env
 ```
 
 Заполните `GIGACHAT_CREDENTIALS` и `GIGACHAT_SCOPE` в `.env`;
-при необходимости укажите `GIGACHAT_CA_BUNDLE_FILE`. По умолчанию — Lite (`GigaChat-2`).
+при необходимости укажите `GIGACHAT_CA_BUNDLE_FILE`. Модель по умолчанию — Lite (`GigaChat-2`).
 
 ```bash
 ./run.sh -d
@@ -45,9 +45,5 @@ chmod 600 .env
 - [Пять диалогов](https://github.com/HolyBayes/oilagent-core/blob/main/examples/demo_dialogues.md)
 
 Проверка с нуля прошла: новые данные, четыре первичных review и пять задач через UI API.
-Это прототип: корпус — два отчёта, прогноз — только Brent на 1–6 месяцев,
+Это прототип: корпус — два PDF отчёта, прогноз — только Brent на 1–6 месяцев,
 OpenAI/local живьём не проверены. Кандидаты из чата требуют проверки и активации оператором.
-
-Submodules фиксируют совместимые commits. Коммит внутри `evolution` не обновляет сборку:
-новый указатель сохраняет оператор. `git submodule update --init --recursive` возвращает
-зафиксированные версии; перед обновлением сохраните локальные изменения.
