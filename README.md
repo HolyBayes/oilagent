@@ -75,7 +75,7 @@ git submodule update --init --recursive
 ## Проверено и ограничено
 
 - Fixed acceptance: **30/30**, включая **13/13** retrieval-кейсов. Дополнительный известный набор — **12/19**. Это не blind benchmark и не точность всех ответов модели.
-- Финальные UI-сценарии: report `partial`, web/hybrid `answered`, forecast `forecasted`, внепрофильный `out_of_scope`. Для report/hybrid проверен период 1H26.
+- Полный функциональный путь из fresh recursive clone: новые `.env` и данные, четыре первичных native review/toggle, пять новых UI-задач. Report/web/hybrid — `answered`, forecast — `forecasted`, внепрофильный — `out_of_scope`; период 1H26 проверен. [Свидетельства](https://github.com/HolyBayes/oilagent-core/blob/main/docs/from-zero-evidence.json). UI проверялся через штатный HTTP API; Docker build layers могли использовать кеш.
 - Прогноз: Brent, ARIMA/ETS, 1–6 месяцев, номинальные 80% интервалы, backtest и naive benchmark. Интервалы не гарантируют покрытие при будущих шоках.
 - Корпус: два frozen отчёта OPEC/EIA. Котировки Brent/WTI — delayed futures. OpenAI/local живьём не проверялись.
 - Бюджеты задаются по запросам/подсистемам; общего гарантированного денежного лимита нет. Во время stage аналитические вызовы закрыты до завершения выпуска.
