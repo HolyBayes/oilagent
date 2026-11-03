@@ -1,5 +1,7 @@
 # OilAgent
 
+[![Offline checks](https://github.com/HolyBayes/oilagent-core/actions/workflows/ci.yml/badge.svg)](https://github.com/HolyBayes/oilagent-core/actions/workflows/ci.yml) [![Pinned assembly](https://github.com/HolyBayes/oilagent/actions/workflows/assembly.yml/badge.svg)](https://github.com/HolyBayes/oilagent/actions/workflows/assembly.yml)
+
 Нефтегазовый аналитик на **Ouroboros и LangGraph**: ответы по отчётам OPEC/EIA и открытым источникам, прогноз Brent и контролируемое самоулучшение навыков.
 
 Это сборочный репозиторий. Он фиксирует совместимые версии приложения и изменяемых методов в двух независимых Git submodules.
@@ -57,6 +59,7 @@ git submodule update --init --recursive
 - «Какие свежие новости о природном газе опубликовало EIA за последние 7 дней?»
 - «Сравни прогнозы роста спроса OPEC и EIA на 2026 год. Раздели источники».
 - «Рассчитай новый прогноз Brent на 3 месяца с интервалами 80%».
+- Проверка границ: «Напиши рецепт борща».
 - «Для request_id … предложи улучшение query_strategy; покажи diff и проверки».
 
 [Пять реальных диалогов](https://github.com/HolyBayes/oilagent-core/blob/main/examples/demo_dialogues.md) · [Архитектура](https://github.com/HolyBayes/oilagent-core/blob/main/ARCHITECTURE.md) · [Запуск и настройки](https://github.com/HolyBayes/oilagent-core#запуск) · [Проверки](https://github.com/HolyBayes/oilagent-core/blob/main/docs/VALIDATION.md)
