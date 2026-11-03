@@ -1,0 +1,6 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/HolyBayes/oilagent-core.git
+[submodule "evolution"]
+	path = evolution
+	url = https://github.com/HolyBayes/oilagent-evolution.git

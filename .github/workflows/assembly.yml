@@ -1,0 +1,20 @@
+name: Pinned assembly
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  assembly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+      - name: Verify pinned checkouts and launch scripts
+        run: |
+          git submodule status --recursive
+          if git submodule status --recursive | grep -Eq '^[+U-]'; then exit 1; fi
+          test -f core/README.md
+          test -f evolution/ouroboros_skills/report_rag/query_strategy.py
+          sh -n core/run.sh core/compose.sh
